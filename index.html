@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+
+
+</head>
+
+<body>
+
+
+    <div class="container-fluid p-3  my-4 ">
+        <div class="container-fluid p-5 bg text-white ">
+
+            <h1 class=" text-center mb-4  head ">CRUD System </h1>
+            <div class="form-group">
+                <label for="">Product Name : </label>
+                <input onkeyup="nameVald(this.value)" class="form-control" id="productNameInp" type="text">
+                <div>
+                    <p class="text-danger text-center h6 d-none" id="nameValidation">please enter capital letter then 2
+                        small at least</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="">Product Price : </label>
+                <input onkeyup="priceVald(this.value)" class="form-control" id="productPriceInp" type="text">
+                <div>
+                    <p class="text-danger text-center h6 d-none" id="priceValidation">please enter 1 to 10 digits</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="">Product Category : </label>
+                <input onkeyup="cateVald(this.value)" class="form-control" id="productCateInp" type="text">
+                <div>
+                    <p class="text-danger text-center h6 d-none" id="categoryValidation">please enter capital letter
+                        then 2 small at least</p>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="">Product Description : </label>
+                <textarea class="form-control" id="productDescInp" type="text"></textarea>
+                <small class="text-muted">Must be 8-15 character.</small>
+            </div>
+            <div id="add-editBtn">
+
+                <button id="addBtn" onclick="addBtn()" class="btn btn-info p-3  mt-3" id="Btn">Add Product</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+
+
+        <div class="my-5">
+            <h1 class="text-center my-4 head1">Our Products</h1>
+            <input onkeyup="searchProduct(this.value)" type="text" class="form-control m-auto w-50 mb-5"
+                placeholder="Search">
+        </div>
+
+        <table class="table table-dark table-striped text-center w-100" id="table">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Product Name</th>
+                    <th>Product Price</th>
+                    <th>Product Category</th>
+                    <th>Product Description</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+
+        <!-- <h1 class="text-center my-3">Our Products</h1>
+        <div class="row text-center" id="productsRow">
+
+
+
+        </div> -->
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

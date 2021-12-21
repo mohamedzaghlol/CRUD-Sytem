@@ -1,0 +1,36 @@
+body {
+  font-family: "segoe ui light";
+  background-image: linear-gradient(45deg, #ada996, #c4e0e5);
+}
+
+.product {
+  position: relative;
+}
+
+.price {
+  background-color: tomato;
+  position: absolute;
+  top: 0%;
+  right: 30px;
+  color: #fff;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.head {
+  font-family: "Crimson Pro", serif;
+  font-size: 64px;
+  color: #f2eceb;
+}
+
+.head1 {
+  font-family: "Crimson Pro", serif;
+  font-size: 64px;
+  color: white;
+}
+
+.bg {
+  background-color: #262625;
+  box-shadow: black;
+  border-radius: 10%;
+}
